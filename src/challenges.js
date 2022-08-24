@@ -52,7 +52,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-// eslint-disable-next-line complexity
+// eslint-disable-next-line complexity, sonarjs/cognitive-complexity
 function fizzBuzz(arr) {
   let arrStrings = [];
   for (let i = 0; i < arr.length; i += 1) {
@@ -71,11 +71,32 @@ function fizzBuzz(arr) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(str) {
+  let replacement = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+
+  str = str.replace(/[aeiou]/gi, (m) => replacement[m]);
+
+  return str;
 }
-function decode() {
-  // seu código aqui
+
+function decode(number) {
+  let replacement = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+
+  number = number.replace(/[12345]/gi, (m) => replacement[m]);
+
+  return number;
 }
 
 // Desafio 10
