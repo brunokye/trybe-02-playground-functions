@@ -23,8 +23,17 @@ function generatePhoneNumber(arr) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+// eslint-disable-next-line complexity, sonarjs/cognitive-complexity
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
+    return true;
+  } if (lineB < lineC + lineA && lineB > Math.abs(lineC - lineA)) {
+    return true;
+  } if (lineC < lineA + lineB && lineC > Math.abs(lineA - lineB)) {
+    return true;
+  }
+
+  return false;
 }
 
 // Desafio 13
