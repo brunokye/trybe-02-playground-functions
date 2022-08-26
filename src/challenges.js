@@ -10,7 +10,7 @@ function calcArea(b, h) {
   return area;
 }
 
-// Desafio 3
+// Desafio 3 - split (https://www.w3schools.com/jsref/jsref_split.asp)
 function splitSentence(str) {
   let sentence = str.split(' ');
 
@@ -30,14 +30,14 @@ function footballPoints(wins, ties) {
   return a + b;
 }
 
-// Desafio 6
+// Desafio 6 - filter (https://stackoverflow.com/questions/37365512/count-the-number-of-times-a-same-value-appears-in-a-javascript-array)
 function highestCount(arr) {
   let higherValue = Math.max(...arr);
 
   return arr.filter((v) => (v === higherValue)).length;
 }
 
-// Desafio 7
+// Desafio 7 - Math.abs (https://stackoverflow.com/questions/4652104/convert-a-negative-number-to-a-positive-one-in-javascript)
 function catAndMouse(mouse, cat1, cat2) {
   let value1 = Math.abs(cat1 - mouse);
   let value2 = Math.abs(cat2 - mouse);
@@ -55,6 +55,7 @@ function catAndMouse(mouse, cat1, cat2) {
 // eslint-disable-next-line complexity, sonarjs/cognitive-complexity
 function fizzBuzz(arr) {
   let arrStrings = [];
+
   for (let i = 0; i < arr.length; i += 1) {
     if (arr[i] % 3 === 0 && arr[i] % 5 === 0) {
       arrStrings.push('fizzBuzz');
@@ -70,7 +71,7 @@ function fizzBuzz(arr) {
   return arrStrings;
 }
 
-// Desafio 9
+// Desafio 9 - replace (https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call)
 function encode(str) {
   let replacement = {
     a: 1,

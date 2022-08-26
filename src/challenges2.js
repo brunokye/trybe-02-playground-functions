@@ -1,4 +1,4 @@
-// Desafio 11
+// Desafio 11 - mask (https://www.florin-pop.com/blog/2019/04/jcc-create-a-phone-number/)
 // eslint-disable-next-line complexity, sonarjs/cognitive-complexity, max-lines-per-function
 function generatePhoneNumber(arr) {
   if (arr.length > 11 || arr.length < 11) {
@@ -36,7 +36,8 @@ function triangleCheck(lineA, lineB, lineC) {
   return false;
 }
 
-// Desafio 13
+// Desafio 13 - match (https://stackoverflow.com/questions/1623221/how-to-find-a-number-in-a-string-using-javascript)
+// Number (https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/)
 function hydrate(str) {
   let check = /\d+/g;
   let combine = str.match(check);
