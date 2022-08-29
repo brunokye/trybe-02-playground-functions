@@ -51,9 +51,30 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 
-// Desafio 8
-// eslint-disable-next-line complexity, sonarjs/cognitive-complexity
+// Desafio 8 - separação em duas funções para correção do ESLint (Anderson Rodrigues | https://github.com/tryber/sd-t26-a-project-playground-functions/pull/11/files#diff-ee28d0ad1f8bfd67f9e31384d9cbe758350eb2594aef029734bfa98d91d46cc1)
+function conditions(arr) {
+  if (arr % 3 === 0 && arr % 5 === 0) {
+    return 'fizzBuzz';
+  } if (arr % 3 === 0) {
+    return 'fizz';
+  } if (arr % 5 === 0) {
+    return 'buzz';
+  }
+
+  return 'bug!';
+}
+
 function fizzBuzz(arr) {
+  let arrStrings = [];
+
+  for (let i = 0; i < arr.length; i += 1) {
+    arrStrings.push(conditions(arr[i]));
+  }
+
+  return arrStrings;
+}
+
+/* function fizzBuzz(arr) {
   let arrStrings = [];
 
   for (let i = 0; i < arr.length; i += 1) {
@@ -69,7 +90,7 @@ function fizzBuzz(arr) {
   }
 
   return arrStrings;
-}
+} */
 
 // Desafio 9 - replace (https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call)
 function encode(str) {

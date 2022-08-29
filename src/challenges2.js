@@ -1,16 +1,23 @@
 // Desafio 11 - mask (https://www.florin-pop.com/blog/2019/04/jcc-create-a-phone-number/)
-// eslint-disable-next-line complexity, sonarjs/cognitive-complexity, max-lines-per-function
-function generatePhoneNumber(arr) {
-  if (arr.length > 11 || arr.length < 11) {
-    return 'Array com tamanho incorreto.';
-  }
-
+function testArr(arr) {
   for (let i = 0; i < arr.length; i += 1) {
     let repeat = arr.filter((v) => (v === arr[i])).length;
 
     if (arr[i] < 0 || arr[i] > 9 || repeat === 3) {
-      return 'não é possível gerar um número de telefone com esses valores';
+      return true;
     }
+  }
+
+  return false;
+}
+
+function generatePhoneNumber(arr) {
+  if (arr.length !== 11) {
+    return 'Array com tamanho incorreto.';
+  }
+
+  if (testArr(arr) === true) {
+    return 'não é possível gerar um número de telefone com esses valores';
   }
 
   let mask = '(xx) xxxxx-xxxx';
@@ -22,9 +29,15 @@ function generatePhoneNumber(arr) {
   return mask;
 }
 
-// Desafio 12
-// eslint-disable-next-line complexity, sonarjs/cognitive-complexity
-function triangleCheck(lineA, lineB, lineC) {
+// Desafio 12 - resolução simples (https://www.geeksforgeeks.org/check-whether-triangle-valid-not-sides-given/)
+function triangleCheck(a, b, c) {
+  if (a + b <= c || a + c <= b || b + c <= a) {
+    return false;
+  }
+  return true;
+}
+
+/* function triangleCheck(lineA, lineB, lineC) {
   if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
     return true;
   } if (lineB < lineC + lineA && lineB > Math.abs(lineC - lineA)) {
@@ -34,7 +47,7 @@ function triangleCheck(lineA, lineB, lineC) {
   }
 
   return false;
-}
+} */
 
 // Desafio 13 - match (https://stackoverflow.com/questions/1623221/how-to-find-a-number-in-a-string-using-javascript)
 // Number (https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/)
