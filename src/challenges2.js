@@ -29,7 +29,7 @@ function generatePhoneNumber(arr) {
   return mask;
 }
 
-// Desafio 12 - resolução simples (https://www.geeksforgeeks.org/check-whether-triangle-valid-not-sides-given/)
+// Desafio 12 - resolução simples para correção do ESLint (https://www.geeksforgeeks.org/check-whether-triangle-valid-not-sides-given/)
 function triangleCheck(a, b, c) {
   if (a + b <= c || a + c <= b || b + c <= a) {
     return false;
