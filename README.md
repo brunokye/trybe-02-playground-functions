@@ -5,7 +5,7 @@ No seu time de desenvolvimento, você ficou responsável por implementar o códi
 
 ## Projeto
 
-![Print do Projeto](https://i.imgur.com/U7BPPMm.png)
+![Print do Projeto](https://i.imgur.com/2LLGZdn.png)
 
 ## Executar Localmente
 
