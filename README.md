@@ -1,10 +1,37 @@
-# :construction: README em Construção! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+
+# Playground Functions
+
+No seu time de desenvolvimento, você ficou responsável por implementar o código de funções que resolvem problemas com respostas pré-determinadas. Você pode utilizar a lógica de programação para te ajudar na análise de cada problema e resposta esperada, facilitando a implementação do código de cada uma das funções.
+
+## Projeto
+
+![Print do Projeto](https://i.imgur.com/U7BPPMm.png)
+
+## Executar Localmente
+
+Clone o projeto 
+
+```bash
+  git clone git@github.com:brunokye/trybe-02-playground-functions.git
+```
+
+Entre no diretório
+
+```bash
+  cd trybe-02-playground-functions/
+```
+
+Abra o projeto
+
+```bash
+  code .
+```
+
+## Tecnologias
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
+
+## Autores
+
+- [@brunokye](https://github.com/brunokye) - Desenvolvimento do projeto
+- [@betrybe](https://github.com/betrybe) - Commit inicial
